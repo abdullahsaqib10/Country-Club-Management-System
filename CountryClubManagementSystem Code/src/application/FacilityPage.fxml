@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BCC7D4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.facilityPageController">
+   <children>
+      <ScrollPane layoutX="60.0" layoutY="157.0" prefHeight="176.0" prefWidth="480.0">
+         <content>
+            <TableView fx:id="FacilitiesTable" prefHeight="201.0" prefWidth="479.0">
+               <columns>
+                  <TableColumn fx:id="facilityID" prefWidth="106.0" text="Facility ID" />
+                  <TableColumn fx:id="facilityName" prefWidth="171.0" text="Facility Name" />
+                  <TableColumn fx:id="facilityCapacity" prefWidth="98.0" text="Facility Capacity" />
+                  <TableColumn fx:id="facilityPrice" prefWidth="103.0" text="Facility Price" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="108.0" prefWidth="600.0" style="-fx-background-color: #075eea;">
+         <children>
+            <ImageView fitHeight="144.0" fitWidth="604.0" layoutY="-29.0">
+               <image>
+                  <Image url="@../HomePage2.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="239.0" layoutY="35.0" text="Facilities" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="selectFacilityButton" layoutX="424.0" layoutY="358.0" mnemonicParsing="false" onAction="#facilitySelection" style="-fx-background-color: #850500;" text="Select Facility" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnToPortal" layoutX="60.0" layoutY="358.0" mnemonicParsing="false" onAction="#toMemberPage" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #850500;" text="Return to Portal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="127.0" text="Select the facility you want to reserve from the list below:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

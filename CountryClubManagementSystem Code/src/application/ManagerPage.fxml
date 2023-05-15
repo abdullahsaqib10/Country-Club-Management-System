@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.managerPageController">
+   <top>
+      <AnchorPane prefHeight="161.0" prefWidth="600.0" style="-fx-background-color: #0b87c7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="201.0" fitWidth="606.0" layoutX="-3.0" layoutY="-38.0">
+               <image>
+                  <Image url="@../HomePage2.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="22.0" text="Country Club Management System" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="208.0" layoutY="82.0" text="Manager Portal" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="248.0" prefWidth="600.0" style="-fx-background-color: #BCC7D4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ManageEmployeeButton" layoutX="351.0" layoutY="56.0" mnemonicParsing="false" onAction="#ManageEmployeePage" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #850500;" text="Manage Employees" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="invalidDetails" layoutX="172.0" layoutY="7.0" prefHeight="17.0" prefWidth="278.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="ManageFacilitiesButton" layoutX="351.0" layoutY="119.0" mnemonicParsing="false" onAction="#ManageFacilitiesPage" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #850500;" text="Manage Facilities" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" layoutX="14.0" layoutY="197.0" mnemonicParsing="false" onAction="#goBacktoHome" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #850500;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="235.0" fitWidth="273.0" layoutX="51.0" layoutY="1.0">
+               <image>
+                  <Image url="@../../../i200458_i201822_F_ProjectCode/src/application/logoBGremove_WitoutLabel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
